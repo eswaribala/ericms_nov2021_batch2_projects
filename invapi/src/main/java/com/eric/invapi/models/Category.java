@@ -26,11 +26,10 @@ public class Category {
 	 @Column(name="Category_Id")
 	private long categoryId;
 	 @Column(name="Category_Name")
-	private String categoryName;
-	 
-	 @OneToMany(mappedBy ="category",
+	private String categoryName;	 
+	@OneToMany(mappedBy ="category",
 			  cascade=CascadeType.ALL,fetch=FetchType.LAZY,orphanRemoval = true)	 
-   @JsonProperty("products")			  
+    @JsonProperty("products")			  
 	@JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY) 
 
 	 private List<Product> products;
