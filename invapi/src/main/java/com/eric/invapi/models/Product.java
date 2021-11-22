@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 @Entity
-@Table(name="Category")
+@Table(name="Product")
 @Data
 public class Product{
     @Id
