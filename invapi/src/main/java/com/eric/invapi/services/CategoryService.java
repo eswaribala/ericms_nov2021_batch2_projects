@@ -20,17 +20,20 @@ public class CategoryService {
 		for(Product product:category.getProducts()) {
 			
 			product.setCategory(category);
-			this.productService.addProduct(product);
+			
 			
 		}
+		//insert query
 		return this.categoryRepository.save(category);
 	}
 	
 	public List<Category> getAllCategories(){
+		//select *
 		return this.categoryRepository.findAll();
 	}
 	
 	public Category getCategoryById(long categoryId){
+		//select * from table where 
 		return this.categoryRepository.findById(categoryId).orElse(null);
 	}
 }
