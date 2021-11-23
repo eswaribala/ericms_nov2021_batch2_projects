@@ -3,6 +3,8 @@ package com.eric.invapi.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,10 +18,17 @@ import org.springframework.web.bind.annotation.RestController;
 import com.eric.invapi.models.Category;
 import com.eric.invapi.services.CategoryService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
 @RequestMapping("/categories")
 @CrossOrigin("*")
+@RefreshScope
+@Slf4j
 public class CategoryController {
+	@Value("${message}")
+	private String message;
+
 	@Autowired
 	private CategoryService categoryService;
 
@@ -36,6 +45,7 @@ public class CategoryController {
 	}
 	@GetMapping({"/v1.0", "/v1.1"})
 	public List<Category> fetchAllCategories(){
+	    log.info("Received Message from Cloud bus"+message);
 		return this.categoryService.getAllCategories();
 	}
 	
