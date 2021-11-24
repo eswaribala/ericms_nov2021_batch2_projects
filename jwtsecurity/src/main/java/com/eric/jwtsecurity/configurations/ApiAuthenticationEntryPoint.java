@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.configurations;
+package com.eric.jwtsecurity.configurations;
 
 import java.io.IOException;
 

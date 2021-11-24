@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.services;
+package com.eric.jwtsecurity.services;
 
 import java.util.List;
 import java.util.Set;
@@ -13,10 +13,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.virtusa.jwtsecurity.models.Role;
-import com.virtusa.jwtsecurity.models.User;
-
-import com.virtusa.jwtsecurity.vo.UserVo;
+import com.eric.jwtsecurity.models.Role;
+import com.eric.jwtsecurity.models.User;
+import com.eric.jwtsecurity.vo.UserVo;
 
 
 

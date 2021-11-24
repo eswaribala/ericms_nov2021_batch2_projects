@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.configurations;
+package com.eric.jwtsecurity.configurations;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

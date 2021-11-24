@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.controllers;
+package com.eric.jwtsecurity.controllers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

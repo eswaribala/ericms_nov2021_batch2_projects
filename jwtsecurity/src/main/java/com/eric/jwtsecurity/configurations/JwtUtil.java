@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.configurations;
+package com.eric.jwtsecurity.configurations;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -10,10 +10,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-import com.virtusa.jwtsecurity.exceptions.JwtTokenMalformedException;
-import com.virtusa.jwtsecurity.exceptions.JwtTokenMissingException;
-import com.virtusa.jwtsecurity.models.Role;
-import com.virtusa.jwtsecurity.models.User;
+import com.eric.jwtsecurity.exceptions.JwtTokenMalformedException;
+import com.eric.jwtsecurity.exceptions.JwtTokenMissingException;
+import com.eric.jwtsecurity.models.Role;
+import com.eric.jwtsecurity.models.User;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;

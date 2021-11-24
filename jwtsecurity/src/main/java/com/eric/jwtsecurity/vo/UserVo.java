@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.vo;
+package com.eric.jwtsecurity.vo;
 
 import java.util.Set;
 

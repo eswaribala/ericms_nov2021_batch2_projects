@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.exceptions;
+package com.eric.jwtsecurity.exceptions;
 
 public class InvalidUserCredentialsException extends RuntimeException {
 

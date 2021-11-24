@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.services;
+package com.eric.jwtsecurity.services;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.virtusa.jwtsecurity.models.Role;
-import com.virtusa.jwtsecurity.models.User;
-import com.virtusa.jwtsecurity.repositories.UserRepository;
+import com.eric.jwtsecurity.models.Role;
+import com.eric.jwtsecurity.models.User;
+import com.eric.jwtsecurity.repositories.UserRepository;
 
 @Service
 public class UserService {

@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.models;
+package com.eric.jwtsecurity.models;
 
 import java.util.ArrayList;
 import java.util.List;

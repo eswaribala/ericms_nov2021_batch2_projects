@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity;
+package com.eric.jwtsecurity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

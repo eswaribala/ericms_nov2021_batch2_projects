@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.filters;
+package com.eric.jwtsecurity.filters;
 
 import java.io.IOException;
 
@@ -15,10 +15,10 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.virtusa.jwtsecurity.configurations.JwtUtil;
-import com.virtusa.jwtsecurity.exceptions.JwtTokenMissingException;
-import com.virtusa.jwtsecurity.models.User;
-import com.virtusa.jwtsecurity.services.UserAuthService;
+import com.eric.jwtsecurity.configurations.JwtUtil;
+import com.eric.jwtsecurity.exceptions.JwtTokenMissingException;
+import com.eric.jwtsecurity.models.User;
+import com.eric.jwtsecurity.services.UserAuthService;
 
 
 @Component

@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.configurations;
+package com.eric.jwtsecurity.configurations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -17,8 +17,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.virtusa.jwtsecurity.filters.JwtAuthenticationFilter;
-import com.virtusa.jwtsecurity.services.UserAuthService;
+import com.eric.jwtsecurity.filters.JwtAuthenticationFilter;
+import com.eric.jwtsecurity.services.UserAuthService;
 
 @Configuration
 @EnableWebSecurity
@@ -29,7 +29,7 @@ public class ApiSecurityConfig extends WebSecurityConfigurerAdapter {
 	private UserAuthService userAuthService;
 
 	@Autowired
-	private com.virtusa.jwtsecurity.filters.JwtAuthenticationFilter jwtAuthenticationFilter;
+	private com.eric.jwtsecurity.filters.JwtAuthenticationFilter jwtAuthenticationFilter;
 
 	@Autowired
 	private ApiAuthenticationEntryPoint authenticationEntryPoint;

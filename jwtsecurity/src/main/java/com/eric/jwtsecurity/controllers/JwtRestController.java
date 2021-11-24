@@ -1,4 +1,4 @@
-package com.virtusa.jwtsecurity.controllers;
+package com.eric.jwtsecurity.controllers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,15 +18,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.virtusa.jwtsecurity.configurations.JwtUtil;
-import com.virtusa.jwtsecurity.exceptions.DisabledUserException;
-import com.virtusa.jwtsecurity.exceptions.InvalidUserCredentialsException;
-import com.virtusa.jwtsecurity.models.Role;
-import com.virtusa.jwtsecurity.models.User;
-import com.virtusa.jwtsecurity.services.UserAuthService;
-import com.virtusa.jwtsecurity.services.UserService;
-import com.virtusa.jwtsecurity.vo.JwtRequest;
-import com.virtusa.jwtsecurity.vo.JwtResponse;
+import com.eric.jwtsecurity.configurations.JwtUtil;
+import com.eric.jwtsecurity.exceptions.DisabledUserException;
+import com.eric.jwtsecurity.exceptions.InvalidUserCredentialsException;
+import com.eric.jwtsecurity.models.Role;
+import com.eric.jwtsecurity.models.User;
+import com.eric.jwtsecurity.services.UserAuthService;
+import com.eric.jwtsecurity.services.UserService;
+import com.eric.jwtsecurity.vo.JwtRequest;
+import com.eric.jwtsecurity.vo.JwtResponse;
 
 
 
