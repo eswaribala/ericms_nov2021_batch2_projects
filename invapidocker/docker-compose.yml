@@ -5,7 +5,7 @@ services:
     image: mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=ericecommdb
+      - MYSQL_DATABASE=ericnov2021batch1_prodinvdb
     volumes:
       - /data/mysql
     healthcheck:        
@@ -13,8 +13,8 @@ services:
         timeout: 10s
         retries: 5
   
-  product-app:
-    image: product-appv1
+  inv-app:
+    image: inv-appv2
     build:
       context: ./
       dockerfile: dockerfile
@@ -31,29 +31,4 @@ services:
     volumes:
       - /data/compose-app
       
-      
-  prometheus:
-    image: prom/prometheus
-    restart: always
-    ports:
-      - 9090:9090
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
-    networks:
-      - dotnetcorepromgrafana
-
-  grafana: 
-    image: grafana/grafana
-    #command:
-    environment:
-      - GF_SECURITY_ADMIN_PASSWORD=P@ssw0rd
-    restart: always
-    ports:
-      - 3000:3000
-    networks:
-      - dotnetcorepromgrafana
-      
-### put all the networks here
-networks:
-  dotnetcorepromgrafana:
       
