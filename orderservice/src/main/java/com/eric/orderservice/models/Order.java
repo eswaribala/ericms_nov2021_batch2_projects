@@ -7,6 +7,6 @@ import lombok.Data;
 @Data
 public class Order {
   private long orderId;
-  private LocalDate orderDate;
+  private String orderDate;
   private long totalAmount;
 }
