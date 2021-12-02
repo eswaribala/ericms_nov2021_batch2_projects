@@ -13,8 +13,8 @@ pipeline{
        steps{
        
           bat "mvn -f ./invapidocker clean install -DskipTests"
-          bat """ cd /d "invapidocker " """
-          bat "docker-compose up"                          
+          bat "docker build -f invapidocker/dockerfile -t invapp ./invapidocker"
+                                  
        }
    
    }
