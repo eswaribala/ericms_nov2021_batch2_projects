@@ -13,7 +13,7 @@ pipeline{
        steps{
        
           bat "mvn -f ./invapidocker clean install -DskipTests"
-          bat "cd inventoryservicedocker & docker-compose up -d"
+          bat "cd invapidocker  & docker-compose up -d"
                                   
        }
    
