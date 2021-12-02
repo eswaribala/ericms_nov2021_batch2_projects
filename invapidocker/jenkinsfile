@@ -1,0 +1,26 @@
+#!groovy
+pipeline{
+ agent any
+ 
+  tools {
+    maven 'maven'
+  }
+ 
+ stages{
+ 
+   stage("build"){
+   
+       steps{
+       
+          bat "mvn -f ./invapidocker clean install -DskipTests"
+          bat "docker build -f invapidocker/dockerfile -t invapp ./invapidocker"
+                                   
+       }
+   
+   }
+ 
+ }
+ 
+ 
+ 
+}
