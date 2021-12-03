@@ -12,6 +12,7 @@ pipeline{
    stage("build"){
       
         
+        
        steps{
        
           bat "mvn -f ./invapidocker clean install -DskipTests"
