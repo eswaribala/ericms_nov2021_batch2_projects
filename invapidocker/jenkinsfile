@@ -15,9 +15,9 @@ pipeline{
         
        steps{
        
-          sh "mvn -f ./invapidocker clean install -DskipTests"
-          //sh "cd invapidocker  & docker-compose up -d"
-          sh "docker build -f ./invapidocker/dockerfile -t invapp ./invapidocker"                        
+          bat "mvn -f ./invapidocker clean install -DskipTests"
+          bat "cd invapidocker  & docker-compose up -d"
+          //sh "docker build -f ./invapidocker/dockerfile -t invapp ./invapidocker"                        
        }
    
    }
